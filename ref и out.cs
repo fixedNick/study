@@ -11,7 +11,7 @@ class Ma {
     public static void SwapRef ( ref int a, ref int b )
     {
         int temp = a;
-        a = b;
+        a = b; 
         b = temp;
     }
 /*
