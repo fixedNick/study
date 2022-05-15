@@ -1,12 +1,19 @@
-var BaseArray = new[,] {
-    {1,2,4,5,7,2,51,2},
-    {221,72,54,511,32,124,1,23}
-};
+namespace Basics.CycleSteppedArray
+{
+    public class CycleSteppedArray
+    {
+        public static void Main()
+        {
+            var BaseArray = new[,] {
+                {1,2,4,5,7,2,51,2},
+                {221,72,54,511,32,124,1,23}
+            };
 
-foreach ( var ArrayElement in BaseArray ) 
-    System.Console.WriteLine("Текущий элемент массива равен: {0}", ArrayElement);
-
-
+            foreach (var ArrayElement in BaseArray) // as row
+                System.Console.WriteLine("Текущий элемент массива равен: {0}", ArrayElement);
+        }
+    }
+}
 // Result: 
 
 /*
